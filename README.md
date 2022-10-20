@@ -23,3 +23,9 @@ Weather app for showcasing weather details and city informations
 
 * Website was created with focus on accessability, performance, best practices and SEO.
 * Fully responsive with break-points for desktop, tablet and mobile.
+
+## Aditional imporvements that could be made
+
+* The background can match the weather conditions for more interactivity
+* Use another API other than the GooglePlaces since it has autocomplete for places and not only cities and places are not compatible with the OpenWeather API
+* Adding a tooltip on hover for each of the weather details with a small description of what they are
