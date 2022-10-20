@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weather application using OpenWeather api to pull data">
+    <meta name="robots" content="index, follow">
+    <script src="https://kit.fontawesome.com/d9847ea934.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=PT+Sans&family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>WeatherApp</title>
+    
+</head>
+<body>
+    <div class="weather-app">
+        <div class="container">
+            <div class="header flex">
+                <div class="logo-light">
+                </div>
+                <button id="darkmode" class="darkmode" role="button" type="button"></button>
+            </div>
+            <div class="info flow">
+                <h1 class="tempreture blue-out">&#176;</h1>
+                <div class="cityAndTime flex">
+                    <h2 class="name blue-out">City</h2>
+                    <span class="dateNtime">date</span>
+                    <span class="cityTime">00:00</span>
+                </div>
+                <div class="dayCondition flex">
+                    <img class="icon" src="./assets/01d.svg" alt="icon" width="75" height="75" loading="lazy">
+                    <span style="font-size:1.5em;" class="condition">Condition</span> 
+                </div>
+            </div>
+        </div>
+        <div class="panel border-left-dark">
+            <form class="locationInput border-bottom-dark">
+                <input class="search" type="text" placeholder="Search Location" name="" id="autocomplete">
+                <button class="submit" type="submit" alt="submit-button">
+                    <i class="fas fa-search fa-lg"></i>
+                </button>
+            </form>
+            <ul class="details">
+                <h4 class="border-bottom-dark blue-out">Weather Details</h4>
+                <li class="flex">
+                    <span>Feels like</span>
+                    <span class="feels-like">&#176;</span>
+                </li>
+                <li class="flex">
+                    <span>Max Tempreture at the moment</span>
+                    <span class="max-temp">&#176;</span>
+                </li>
+                <li class="flex">
+                    <span>Minimum tempreture at the moment</span>
+                    <span class="min-temp">&#176;</span>
+                </li>
+                <li class="flex">
+                    <span>Cloudy</span>
+                    <span class="cloudy">%</span>
+                </li>
+                <li class="flex">
+                    <span>Humidity</span>
+                    <span class="humidity">%</span>
+                </li>
+                <li class="flex">
+                    <span>Wind Speed</span>
+                    <span class="wind">km/h</span>
+                </li>
+                <h4 class="border-bottom-dark blue-out">City Information</h4>
+                <li class="flex">
+                    <span>Latitude</span>
+                    <span class="latitude">%</span>
+                </li>
+                <li class="flex">
+                    <span>Longitude</span>
+                    <span class="longitude">%</span>
+                </li>
+                <li class="flex">
+                    <span>Sunrise</span>
+                    <span class="sunrise">00:00:00</span>
+                </li>
+                <li class="flex">
+                    <span>Sunset</span>
+                    <span class="sunset">00:00:00</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="area" >
+        <ul class="circles">
+                <li class="circles-background-light"></li>
+                <li></li>
+                <li class="circles-background-light"></li>
+                <li></li>
+                <li class="circles-background-light"></li>
+                <li></li>
+                <li class="circles-background-light"></li>
+                <li></li>
+                <li class="circles-background-light"></li>
+                <li></li>
+                <li class="circles-background-light"></li>
+                <li></li>
+        </ul>
+    </div>
+<script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWWBu0MgD6ydaS9BSuk7YzGCpwinxORx8&libraries=places&callback=activatePlacesSearch">
+</script>
+    <script src="app.js"></script>
+</body>
+</html>
