@@ -24,6 +24,9 @@ const panel = document.querySelector(".panel");
 const circles = document.querySelectorAll(".circles-background-light");
 const logo = document.querySelector(".logo-light");
 
+
+
+
 darkMode.addEventListener("click",()=>{
     appBody.classList.toggle("bg-darkmode");
     appBody.classList.toggle("white-out");
@@ -39,6 +42,7 @@ darkMode.addEventListener("click",()=>{
     logo.classList.toggle("logo-light");
     logo.classList.toggle("logo-dark");
     darkMode.classList.toggle("lightmode");
+    icon.classList.toggle("icon-dark");
 })
 
 
