@@ -47,11 +47,13 @@ darkMode.addEventListener("click",()=>{
 const apiKey = "c72953bdd6c68102669c37f699712a3a";
 const googleApiKey = "AIzaSyDWWBu0MgD6ydaS9BSuk7YzGCpwinxORx8";
 
-// Autocomplete activation
-function activatePlacesSearch() {
-    const input = document.getElementById('autocomplete');
-    let autocomplete = new google.maps.places.Autocomplete(input);
-}   
+
+
+let options = {
+    types: ['(cities)']
+}
+
+let autocomplete = new google.maps.places.Autocomplete(input,options)
 
 // Adding a "0" to the left if number is under 2 digits
 function padTo2Digits(num) {

@@ -45,37 +45,37 @@
             <ul class="details">
                 <h4 class="border-bottom-dark blue-out">Weather Details</h4>
                 <li class="flex">
-                    <span>Feels like</span>
+                    <span data-tooltip="This temperature parameter accounts for the human perception of weather">Feels like</span>
                     <span class="feels-like">&#176;</span>
                 </li>
                 <li class="flex">
-                    <span>Max Tempreture at the moment</span>
+                    <span data-tooltip="Max daily temperature for the day">Max temperature</span>
                     <span class="max-temp">&#176;</span>
                 </li>
                 <li class="flex">
-                    <span>Minimum tempreture at the moment</span>
+                    <span data-tooltip="Min daily temperature for the day">Minimum temperature</span>
                     <span class="min-temp">&#176;</span>
                 </li>
                 <li class="flex">
-                    <span>Cloudy</span>
+                    <span data-tooltip="The extent to which the atmosphere is covered by cloud">Cloudy</span>
                     <span class="cloudy">%</span>
                 </li>
                 <li class="flex">
-                    <span>Humidity</span>
+                    <span data-tooltip="Percentage of the amount of water vapor in the air">Humidity</span>
                     <span class="humidity">%</span>
                 </li>
                 <li class="flex">
-                    <span>Wind Speed</span>
+                    <span data-tooltip="Description of how fast the air is moving past a certain point">Wind Speed</span>
                     <span class="wind">km/h</span>
                 </li>
                 <h4 class="border-bottom-dark blue-out">City Information</h4>
                 <li class="flex">
-                    <span>Latitude</span>
-                    <span class="latitude">%</span>
+                    <span data>Latitude</span>
+                    <span class="latitude">N</span>
                 </li>
                 <li class="flex">
-                    <span>Longitude</span>
-                    <span class="longitude">%</span>
+                    <span data>Longitude</span>
+                    <span class="longitude">E</span>
                 </li>
                 <li class="flex">
                     <span>Sunrise</span>
@@ -104,9 +104,10 @@
                 <li></li>
         </ul>
     </div>
-<script async
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWWBu0MgD6ydaS9BSuk7YzGCpwinxORx8&libraries=places&callback=activatePlacesSearch">
+<script 
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWWBu0MgD6ydaS9BSuk7YzGCpwinxORx8&libraries=places">
 </script>
-    <script src="app.js"></script>
+
+<script src="app.js"></script>
 </body>
 </html>
